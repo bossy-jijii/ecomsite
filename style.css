@@ -1,0 +1,122 @@
+body{
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#374158;
+    width:100%;
+    box-shadow: 0px 5px 15px whitesmoke;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.logo{
+    width: 100px;
+    height:100px;
+
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    font-weight:bold;
+    padding: 0px 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size:  15px;
+    font-weight:600px;
+    color:black;
+    transition: 0.6 ease-in-out;
+
+}
+
+/* DABA ANA BGHIT ILA CLIQUIT 3la chi haja f menu tkoun underlined mn teht avec effect dyal hover 
+so what do to do anzido wahd after */
+#navbar li a:hover,
+#navbar li a :hover.active{
+    color:#D76C58;
+
+}
+/*.active: This is a class selector and targets the link with the class "active." It's typically used to highlight the currently active page or section.*/
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+content: "";
+width:35%;
+height:2px;
+background:#D76C58;
+position:absolute;
+bottom:-4px;
+left:20px;
+}
+
+#hero{
+    background-image:url("img/Cycling Studio.jpeg");
+    height:90vh;
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top 25% right 0;
+    background-attachment:fixed;
+    padding: 0 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+#hero h4{
+    padding-bottom: 15px;
+    color:antiquewhite;
+}
+#hero h1{
+    color: #010204;
+    font-weight: bold;
+
+}
+#hero h2{
+    color:antiquewhite;
+}
+#hero p{
+    color:antiquewhite
+}
+
+#hero button{
+    background-color: #022525;
+    width: 100px;
+    height: 35px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+    border-bottom left radius 5px;
+    color: rgb(61, 155, 157);
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    
+}
+.img_deg{
+    float:right;
+    width: 30%;
+    margin-right: 0%;
+}
+.imgg{
+    position:absolute;
+    width:70%;
+    top:20%;
+    left:15%;
+    padding:60px;
+}
